@@ -1,0 +1,14 @@
+&__item-link {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  
+  padding: 30px 130px 30px 30px;
+
+  text-decoration: none;
+  color: #fff;
+  font-weight: normal;
+  font-size: 22px;
+
+  @import '_active/menu__item-link_active';
+}
