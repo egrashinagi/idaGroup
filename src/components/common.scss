@@ -16,3 +16,22 @@ body {
 
   padding: 15px;
 }
+
+.list {
+  display: flex;
+  flex-direction: row;
+
+  &__input {
+    margin-right: 10px;
+  }
+  &__select {
+    display: flex;
+
+    padding: 3px;
+    background: radial-gradient(#e8f3f5, #83c6d3);
+
+    outline-style: none;
+    border: 1px solid rgba(137, 137, 137, 0.64);
+    border-radius: 3px;
+  }
+}
