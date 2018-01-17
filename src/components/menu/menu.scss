@@ -3,6 +3,8 @@
   flex-direction: column;
   justify-content: flex-start;
 
+  margin: 0;
+
   @import '__item/menu__item';
   @import '__item-link/menu__item-link';
 }
