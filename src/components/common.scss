@@ -8,3 +8,11 @@ body {
 
   font-family: Helvetica, Arial, sans-serif;
 }
+
+.block {
+  display: flex;
+
+  justify-content: flex-start;
+
+  padding: 15px;
+}
