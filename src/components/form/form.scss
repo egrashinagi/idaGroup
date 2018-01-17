@@ -1,6 +1,11 @@
 .form {
   display: flex;
-  flex-direction: column;
+
+  padding: 20px;
+  border: 1px solid #e4e9ee;
+  border-radius: 6px;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10);
 
   @import '__paycard/form__paycard';
+  @import '_slip/form_slip';
 }

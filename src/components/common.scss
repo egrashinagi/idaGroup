@@ -14,12 +14,14 @@ body {
 
   justify-content: flex-start;
 
-  padding: 15px;
+  padding: 40px 15px 40px 15px;
 }
 
 .list {
   display: flex;
   flex-direction: row;
+
+  margin-top: 10px;
 
   &__input {
     margin-right: 10px;
