@@ -36,9 +36,45 @@
             </div>
         </div>
         <div class="info__title info__title_p30px info__title_black info__title_header">Данные банковской карты</div>
-        <div class="block">
-            <button class="button">Оплатить</button>
-        </div>
+    </div>
+    <div class="form">
+        <form class="form__paycard" method="post" action="http://test.autre.ru/form.php">
+
+            <div class="info__title">Номер карты</div>
+            <div class="list">
+                <input name="number-card_part1" class="list__input" type="text"
+                       maxlength="4" required>
+                <input name="number-card_part2" class="list__input" type="text"
+                       maxlength="4" required>
+                <input name="number-card_part3" class="list__input" type="text"
+                       maxlength="4" required>
+                <input name="number-card_part4" class="list__input" type="text"
+                       maxlength="6" required>
+                <!--TODO <input type="password" name="cvv" placeholder="CVV" maxlength="3"-->
+                <!--TODO class="form__paycard-number-input-cvv" required>-->
+            </div>
+            <div class="info__title info__title_p30px">Срок действия</div>
+            <label>
+                <select name="month">
+                    <option value="jan">01</option>
+                    <option value="feb">02</option>
+                    <option value="mar">03</option>
+                    <option value="apr">04</option>
+                    <option value="may">05</option>
+                    <option value="jun">06</option>
+                    <option value="jul">07</option>
+                    <option value="aug">08</option>
+                    <option value="sep">09</option>
+                    <option value="oct">10</option>
+                    <option value="nov">11</option>
+                    <option value="dec">12</option>
+                </select>
+            </label>
+            <input type="text" name="year" placeholder="18" maxlength="2" class="card-name__year" required>
+            <div class="block">
+                <button class="button">Оплатить</button>
+            </div>
+        </form>
     </div>
 </div>
 </body>
