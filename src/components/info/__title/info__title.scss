@@ -5,9 +5,11 @@
   padding: 0 10px 10px 0;
 
   color: #a7b2c1;
+  font-weight: 100;
 
   @import '_black/info__title_black';
   @import '_p30px/info__title_p30px';
   @import '_header/info__title_header';
   @import '_p10px/info__title_p10px';
+  @import '_end/info__title_end';
 }

@@ -14,7 +14,16 @@ body {
 
   justify-content: flex-start;
 
-  padding: 40px 15px 40px 15px;
+  padding: 100px 15px 40px 15px;
+  margin-bottom: 10px;
+  text-align: right;
+  
+  &_gray {
+    justify-content: flex-end;
+    background-color: #e4e9ee;
+    padding: 20px 245px 20px 136px;
+    margin-bottom: 20px;
+  }
 }
 
 .list {
@@ -35,5 +44,17 @@ body {
     outline-style: none;
     border: 1px solid rgba(137, 137, 137, 0.64);
     border-radius: 3px;
+  }
+
+  &_end {
+    justify-content: flex-end;
+
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  &_form {
+    display: flex;
+    flex-direction: column;
   }
 }

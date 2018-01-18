@@ -3,7 +3,7 @@
   flex-wrap: nowrap;
   flex-shrink: 0;
   
-  padding: 30px 130px 30px 30px;
+  padding: 30px 100px 30px 30px;
 
   text-decoration: none;
   color: #fff;
@@ -11,4 +11,15 @@
   font-size: 22px;
 
   @import '_active/menu__item-link_active';
+
+  //
+  //@media screen and (max-width: 786px) {
+  //  font-size: 18px;
+  //  padding: 20px 100px 20px 20px;
+  //}
+  //
+  //@media screen and (max-width: 480px) {
+  //  font-size: 16px;
+  //  padding: 20px 50px 20px 20px;
+  //}
 }
