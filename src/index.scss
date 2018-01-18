@@ -1,0 +1,45 @@
+@import './components/common';
+@import './components/menu/menu';
+@import './components/authorization/authorization';
+@import './components/info/info';
+@import './components/button/button';
+@import './components/form/form';
+@import './components/input/input';
+
+/*----mobile version----*/
+
+
+//@media screen and (min-width: 768px) {
+//  body {
+//    padding: 10px;
+//  }
+//
+//  .list {
+//    display: block;
+//  }
+//
+//  .form_slip {
+//    justify-content: center;
+//    left: 0;
+//    width: auto;
+//    padding: 10px;
+//  }
+//
+//  .block {
+//    padding: 60px 0 0 0;
+//
+//    &_gray {
+//      display: none;
+//    }
+//  }
+//
+//  .authorization {
+//    padding: 20px;
+//  }
+//}
+
+//@media screen and (min-width: 480px) {
+//  .block {
+//    padding: 10px 0 0 0;
+//  }
+//}

@@ -1,0 +1,9 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+  @import '__title/info__title';
+  @import '_row/info_row';
+  @import '_p30px/info_p30px';
+}

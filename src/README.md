@@ -1,11 +1,10 @@
-# Test task for Yandex 
-
-Нужно сверстать страницу списка переговрок и форму редактирования встречи.
+# Test task for IDAGROUP
 
 ## Description
+Сверстать статическую страницу на основе макета с учетом нижеуказанных требований.
 
 ### Start development
-Run in development mode **http://localhost:3000**
+Run in development mode **http://localhost:9000**
 
 ```
 $ npm start

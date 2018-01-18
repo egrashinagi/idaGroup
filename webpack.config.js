@@ -33,12 +33,12 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin('index.css'),
     new HtmlWebpackPlugin({
-      template: './src/pages/tooltip.html'
+      template: './src/index.html'
     })
   ],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
-    port: 3000
+    port: 9000
   }
 };

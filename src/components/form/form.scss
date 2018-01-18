@@ -1,0 +1,14 @@
+.form {
+  display: flex;
+
+  padding: 20px;
+  border: 1px solid #e4e9ee;
+  border-radius: 6px;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10);
+
+  //width: 350px;
+  //height: 230px;
+
+  @import '__paycard/form__paycard';
+  @import '_slip/form_slip';
+}
