@@ -9,41 +9,18 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.block {
+.cards {
   display: flex;
 
   justify-content: flex-start;
 
-  padding: 100px 15px 40px 15px;
   margin-bottom: 10px;
   text-align: right;
-  
+
   &_gray {
-    justify-content: flex-end;
     background-color: #e4e9ee;
     padding: 20px 245px 20px 136px;
-    margin-bottom: 20px;
-  }
-}
-
-.list {
-  display: flex;
-  flex-direction: row;
-
-  margin-top: 10px;
-
-  &__input {
-    margin-right: 10px;
-  }
-  &__select {
-    display: flex;
-
-    padding: 3px;
-    background: radial-gradient(#e8f3f5, #83c6d3);
-
-    outline-style: none;
-    border: 1px solid rgba(137, 137, 137, 0.64);
-    border-radius: 3px;
+    margin-bottom: 50px;
   }
 
   &_end {
@@ -55,6 +32,17 @@ body {
 
   &_form {
     display: flex;
-    flex-direction: column;
+   flex-direction: row;
+  }
+
+  &_slip {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &_margin {
+    margin-top: 20px;
   }
 }
