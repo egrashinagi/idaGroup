@@ -6,7 +6,7 @@ body {
 
   background-color: #101114;
 
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 .cards {
@@ -16,7 +16,7 @@ body {
 
   margin-bottom: 10px;
   text-align: left;
-  padding-left: 30px;
+  padding-left: 60px;
 
   &_gray {
     background-color: #e4e9ee;
@@ -41,6 +41,8 @@ body {
     height: 300px;
     position: relative;
     z-index: 1;
+
+    margin-bottom: 150px;
   }
 
   &_margin {
@@ -51,4 +53,13 @@ body {
   &_padding_none {
     padding: 0;
   }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+
+  z-index: 4;
 }

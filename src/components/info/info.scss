@@ -4,7 +4,7 @@
   justify-content: flex-start;
 
   padding-left: 20px;
-  
+
   @import '__title/info__title';
   @import '_row/info_row';
   @import '_padding_l/info_padding_l';
@@ -13,4 +13,5 @@
   @import '_width_min/info_width_min';
   @import '_width_max/info_width_max';
   @import '_padding_none/info_padding_none';
+  @import '_height/info_height';
 }

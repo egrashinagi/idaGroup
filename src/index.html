@@ -22,7 +22,7 @@
         <a href="#" class="menu__item-link menu__item-link_active">Выйти</a>
     </li>
 </ul>
-<div class="info info_bgc info__width_min info_width_max info_padding_none">
+<div class="info info_bgc info__width_min info_width_max info_padding_none info_height">
     <div class="info">
         <div class="info__title info__title_padding_l">Информация по оплате:</div>
         <div class="info info_row">
@@ -38,7 +38,8 @@
         <div class="info__title info__title_padding_l info__title_black info__title_big">Данные банковской карты</div>
     </div>
 
-    <form method="post" action="http://test.autre.ru/form.php" class="cards cards_slip" autocomplete="on">
+    <form method="post" action="http://test.autre.ru/form.php" class="cards cards_slip" autocomplete="on" name="data"
+          onsubmit="return validateForm()">
         <div class="card card_slip card_top">
             <div class="info__title">Номер карты</div>
             <div class="cards cards_padding_none">
@@ -84,8 +85,8 @@
                 </datalist>
             </label>
             <label>
-                <input name="number-card_part1" class="input input_left" type="text" minlength="4" required
-                       placeholder="Держатель карты" pattern="[A-Za-z]">
+                <input name="name" class="input input_left" type="text" minlength="4" required
+                       placeholder="Держатель карты">
             </label>
         </div>
         <div class="card card_margin_l card_slip card_bottom">
@@ -93,15 +94,17 @@
             <div class="info__title info__title_right">Код CCV2/ CVC2</div>
             <div class="cards cards_end">
                 <label>
-                    <input name="number-card_part4" class="input input_height_l input_width_xl" type="password"
+                    <input name="code" class="input input_height_l input_width_xl" type="password"
                            maxlength="3" required>
                 </label>
             </div>
+            <div class="buttons">
+                <button class="button button_width_l button_margin" type="submit">
+                    <span class="button__text">Оплатить</span>
+                </button>
+            </div>
         </div>
     </form>
-    <div class="cards cards_margin">
-        <button class="button" type="submit">Оплатить</button>
-    </div>
     <div class="info info_more info__width_min info_width_max">
         <p>
             Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть артезианского
