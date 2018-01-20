@@ -9,29 +9,42 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.block {
+.cards {
   display: flex;
 
   justify-content: flex-start;
 
-  padding: 15px;
-}
+  margin-bottom: 10px;
+  text-align: right;
+  padding-left: 30px;
 
-.list {
-  display: flex;
-  flex-direction: row;
-
-  &__input {
-    margin-right: 10px;
+  &_gray {
+    background-color: #e4e9ee;
+    padding: 20px 245px 20px 136px;
+    margin-bottom: 50px;
   }
-  &__select {
+
+  &_end {
+    justify-content: flex-end;
+
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  &_form {
     display: flex;
+   flex-direction: row;
+  }
 
-    padding: 3px;
-    background: radial-gradient(#e8f3f5, #83c6d3);
+  &_slip {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    z-index: 1;
+  }
 
-    outline-style: none;
-    border: 1px solid rgba(137, 137, 137, 0.64);
-    border-radius: 3px;
+  &_margin {
+    margin-top: 50px;
+    margin-bottom: 30px;
   }
 }

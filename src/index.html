@@ -37,23 +37,23 @@
         </div>
         <div class="info__title info__title_p30px info__title_black info__title_header">Данные банковской карты</div>
     </div>
-    <div class="form">
-        <form class="form__paycard" method="post" action="http://test.autre.ru/form.php">
 
+    <form method="post" action="http://test.autre.ru/form.php" class="cards cards_slip" autocomplete="on">
+        <div class="form form_slip form_z3">
             <div class="info__title">Номер карты</div>
-            <div class="list">
-                <input name="number-card_part1" class="input input_w65px input_h40px" type="text"
-                       maxlength="4" required>
-                <input name="number-card_part2" class="input input_w65px input_h40px" type="text"
-                       maxlength="4" required>
-                <input name="number-card_part3" class="input input_w65px input_h40px" type="text"
-                       maxlength="4" required>
-                <input name="number-card_part4" class="input input_w65px input_h40px" type="text"
-                       maxlength="6" required>
-                <!--TODO <input type="password" name="cvv" placeholder="CVV" maxlength="3"-->
-                <!--TODO class="form__paycard-number-input-cvv" required>-->
+            <div class="cards">
+                <label>
+                    <input name="number-card" class="input input_w65px input_h40px" type="text" maxlength="4"
+                           required>
+                    <input name="number-card" class="input input_w65px input_h40px" type="text" maxlength="4"
+                           required>
+                    <input name="number-card" class="input input_w65px input_h40px" type="text" maxlength="4"
+                           required>
+                    <input name="number-card" class="input input_w65px input_h40px" type="text" maxlength="6"
+                           required>
+                </label>
             </div>
-            <div class="info__title info__title_p30px">Срок действия</div>
+            <div class="info__title info__title_p10px">Срок действия</div>
             <label>
                 <input name="month" class="input input_w65px input_h40px" type="text" required list="month">
                 <datalist id="month">
@@ -70,7 +70,8 @@
                     <option value="nov">11</option>
                     <option value="dec">12</option>
                 </datalist>
-                <input name="year" placeholder="2018" maxlength="4" class="input input_w65px input_h40px" type="text" list="year" required>
+                <input name="year" placeholder="2018" maxlength="4" class="input input_w65px input_h40px"
+                       type="text" list="year" required>
                 <datalist id="year">
                     <option value="2018">2018</option>
                     <option value="2019">2019</option>
@@ -82,11 +83,48 @@
                     <option value="2025">2025</option>
                 </datalist>
             </label>
-            <div class="block">
-                <button class="button">Оплатить</button>
+            <label>
+                <input name="number-card_part1" class="input input_left" type="text" maxlength="4" required
+                       placeholder="Держатель карты">
+            </label>
+        </div>
+        <div class="form form_margin form_slip form_z2">
+            <div class="cards cards_gray"></div>
+            <div class="info__title info__title_end">Код CCV2/ CVC2</div>
+            <div class="cards cards_end">
+                <label>
+                    <input name="number-card_part4" class="input input_h40px input_w137px" type="text"
+                           maxlength="3" required>
+                </label>
             </div>
-        </form>
+        </div>
+    </form>
+    <div class="cards cards_margin">
+        <button class="button" type="submit">Оплатить</button>
+    </div>
+    <div class="authorization authorization_more">
+        <p>
+            Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть артезианского бассейна,
+            которая в настоящее время находится ниже уровня моря, ослабляет систематический уход. Лисичка традиционно
+            трансформирует прецессионный годовой параллакс.
+        </p>
+        <p>
+            Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.
+        </p>
+        <p>
+            Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.
+        </p>
+        <p>
+            Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. Проекция вертикально дает уходящий
+            диабаз. Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий волчок, что
+            обусловлено не только первичными неровностями эрозионно-тектонического рельефа поверхности кристаллических
+            пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет иначе взглянуть на то, что
+            такое волчок.
+        </p>
     </div>
 </div>
+
+
+
 </body>
 </html>
