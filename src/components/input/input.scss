@@ -12,10 +12,10 @@
   color: #353535;
   text-align: center;
 
-  @import '_h40px/input_h40px';
-  @import '_w65px/input_w65px';
+  @import '_height_l/input_height_l';
+  @import '_width_l/input_width_l';
   @import '_left/input_left';
-  @import '_w137px/input_w137px';
+  @import '_width_xl/input_width_xl';
 
   &::placeholder {
     color: #bec6cf;
