@@ -63,3 +63,14 @@ body {
 
   z-index: 4;
 }
+
+.icon {
+  position: absolute;
+  content: url("assets/images/q.png");
+
+  z-index: 6;
+
+  background-color: #fff;
+  top: 150px;
+  left: 335px;
+}
