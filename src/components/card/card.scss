@@ -1,4 +1,4 @@
-.form {
+.card {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
@@ -9,7 +9,7 @@
   box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10);
   background-color: #f7f8f8;
 
-  @import '_margin/form_margin';
-  @import '_z2/form_z2';
-  @import '_z3/form_z3';
+  @import '_margin_l/card_margin_l';
+  @import '_bottom/card_bottom';
+  @import '_top/card_top';
 }
