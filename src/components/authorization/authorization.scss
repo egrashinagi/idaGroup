@@ -2,8 +2,10 @@
   display: flex;
   flex-direction: column;
 
-  min-width: 640px;
-  padding: 20px 30px;
+  min-width: 720px;
+  width: auto;
 
   background-color: #f7f8f8;
+
+  @import '_more/authorization_more';
 }
