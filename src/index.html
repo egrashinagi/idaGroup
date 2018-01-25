@@ -38,24 +38,20 @@
         <div class="info__title info__title_padding_l info__title_black info__title_big">Данные банковской карты</div>
     </div>
 
-    <form method="post" action="http://test.autre.ru/form.php" class="cards cards_slip" autocomplete="on" name="data">
+    <form class="cards cards_slip" autocomplete="on" name="form" action="http://test.autre.ru/form.php" method="post">
         <div class="card card_slip card_top">
             <div class="info__title">Номер карты</div>
             <div class="cards cards_padding_none">
                 <label>
-                    <input name="number" class="input input_width_l input_height_l" type="text" maxlength="4"
-                           required>
-                    <input name="number" class="input input_width_l input_height_l" type="text" maxlength="4"
-                           required>
-                    <input name="number" class="input input_width_l input_height_l" type="text" maxlength="4"
-                           required>
-                    <input name="number" class="input input_width_l input_height_l" type="text" maxlength="4"
-                           required>
+                    <input name="number" class="input input_width_l input_height_l" type="text" maxlength="4">
+                    <input name="number" class="input input_width_l input_height_l" type="text" maxlength="4">
+                    <input name="number" class="input input_width_l input_height_l" type="text" maxlength="4">
+                    <input name="number" class="input input_width_l input_height_l" type="text" maxlength="4">
                 </label>
             </div>
             <div class="info__title info__title_padding_s">Срок действия</div>
             <label>
-                <input name="month" class="input input_width_l input_height_l" type="text" required list="month">
+                <input name="month" class="input input_width_l input_height_l" type="text" list="month">
                 <datalist id="month">
                     <option value="jan">01</option>
                     <option value="feb">02</option>
@@ -71,7 +67,7 @@
                     <option value="dec">12</option>
                 </datalist>
                 <input name="year" placeholder="2018" maxlength="4" class="input input_width_l input_height_l"
-                       type="text" list="year" required>
+                       type="text" list="year">
                 <datalist id="year">
                     <option value="2018">2018</option>
                     <option value="2019">2019</option>
@@ -84,7 +80,7 @@
                 </datalist>
             </label>
             <label>
-                <input name="username" class="input input_left" type="text" minlength="4" required
+                <input name="username" class="input input_left" type="text" minlength="4"
                        placeholder="Держатель карты">
             </label>
         </div>
@@ -94,12 +90,12 @@
             <div class="cards cards_end">
                 <label>
                     <input name="pass" class="input input_height_l input_width_xl" type="password"
-                           maxlength="3" required>
+                           maxlength="3">
                     <span class="icon"></span>
                 </label>
             </div>
             <div class="buttons">
-                <button class="button button_width_l button_margin" type="submit" onclick="validate(this.form)">
+                <button class="button button_width_l button_margin" type="submit" name="button" formtarget="output">
                     <span class="button__text">Оплатить</span>
                 </button>
             </div>

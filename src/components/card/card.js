@@ -1,60 +1,46 @@
-function showError(container, errorMessage) {
-    container.className = 'error';
-    let msgElem = document.createElement('span');
-    msgElem.className = "error-message";
-    msgElem.innerHTML = errorMessage;
-    container.appendChild(msgElem);
+const form = document.querySelector('form.cards');
+console.log('что тут у нас?', form);
+const fields = form.querySelectorAll('.input');
+console.log('что тут у нас?', fields);
+
+const validateButton = form.querySelector('.button');
+console.log('что тут у нас?', validateButton);
+
+
+function generateError(text) {
+    let error = document.createElement('span');
+    error.className = 'error';
+    error.style.color = 'red';
+    error.innerHTML = text;
+    return error;
 }
 
-function resetError(container) {
-    container.className = '';
-    if (container.lastChild.className === "error-message") {
-        container.removeChild(container.lastChild);
+
+function removeValidation() {
+    let errors = form.querySelectorAll('.error');
+
+    for (let i = 0; i < errors.length; i++) {
+        errors[i].remove();
     }
 }
 
-function validate(form) {
-    let elems = form.elements;
-
-    resetError(elems.number.parentNode);
-    if (!elems.number.value) {
-        showError(elems.from.parentNode, ' Укажите от кого.');
-    }
-
-    resetError(elems.month.parentNode);
-    if (!elems.month.value) {
-        showError(elems.from.parentNode, ' Укажите от кого.');
-    }
-
-    resetError(elems.year.parentNode);
-    if (!elems.year.value) {
-        showError(elems.from.parentNode, ' Укажите от кого.');
-    }
-
-    resetError(elems.username.parentNode);
-    if (!elems.username.value) {
-        showError(elems.from.parentNode, ' Укажите от кого.');
-    }
-
-    resetError(elems.pass.parentNode);
-    if (!elems.pass.value) {
-        showError(elems.from.parentNode, ' Укажите от кого.');
-    }
-
-    resetError(elems.password.parentNode);
-    if (!elems.password.value) {
-        showError(elems.password.parentNode, ' Укажите пароль.');
-    } else if (elems.password.value !== elems.password2.value) {
-        showError(elems.password.parentNode, ' Пароли не совпадают.');
-    }
-
-    resetError(elems.to.parentNode);
-    if (!elems.to.value) {
-        showError(elems.to.parentNode, ' Укажите, куда.');
-    }
-
-    resetError(elems.message.parentNode);
-    if (!elems.message.value) {
-        showError(elems.message.parentNode, ' Отсутствует текст.');
+function checkField() {
+    for (let i = 0; i < fields.length; i++) {
+        if (!fields[i].value) {
+            console.log('field is blanck', fields[i]);
+            let error = generateError(' * ');
+            form[i].parentElement.insertBefore(error, fields[i]);
+        }
     }
 }
+
+form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    removeValidation();
+    checkField();
+});
+
+// TODO if (cardsElement === null) {
+//TODO    throw "Работать дальше нельзя! Элемент не найден!"
+
+
